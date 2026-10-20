@@ -1,0 +1,1 @@
+A responsive personal homepage that introduces me, shows my skills and presents the projects I have built. It is made with plain HTML, CSS and JavaScript, with no frameworks and no build step, so it opens in any browser.
