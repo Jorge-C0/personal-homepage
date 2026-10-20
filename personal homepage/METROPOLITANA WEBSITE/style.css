@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background: #fff;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Cabeçalho */
+header {
+  background: #1b3a6b;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+}
+
+.subtitle {
+  color: #d4af37;
+  margin-bottom: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #d4af37;
+}
+
+/* Destaque */
+.hero {
+  background-color: #2b5aa0; /* cor de reserva caso a imagem não carregue */
+  background-image:
+    linear-gradient(rgba(40, 79, 142, 0.6), rgba(27, 58, 107, 0.6)),
+    url("IMG_7873.JPG");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 24px;
+  background: #d4af37;
+  color: #1b3a6b;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background: #b8932a;
+}
+
+/* Secções */
+.section {
+  padding: 50px 0;
+}
+
+.section h2 {
+  color: #1b3a6b;
+  margin-bottom: 15px;
+}
+
+.alt {
+  background: #f2f5fa;
+}
+
+/* Cartões de horários */
+.cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1;
+  min-width: 200px;
+  background: #fff;
+  padding: 20px;
+  border-top: 4px solid #d4af37;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  color: #1b3a6b;
+  margin-bottom: 5px;
+}
+
+/* Rodapé */
+footer {
+  background: #1b3a6b;
+  color: #fff;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 0.9rem;
+}

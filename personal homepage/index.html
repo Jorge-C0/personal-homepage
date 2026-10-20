@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>First Benvindo Jorge Catewa | Personal Homepage</title>
+
+  <!-- Icon library (Font Awesome) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="slideshow.css">
+
+  <!-- Without JavaScript, show both projects one under the other -->
+  <noscript>
+    <style>
+      .projects-container { display: flex; flex-direction: column; gap: 1.5rem; }
+      .project-card { opacity: 1; visibility: visible; pointer-events: auto; transform: none; }
+      .slideshow-controls { display: none; }
+    </style>
+  </noscript>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <h1>First Benvindo Jorge Catewa</h1>
+    <p>Focus on solving, not just implementing</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="projects-section" aria-roledescription="carousel" aria-labelledby="projects-title">
+      <div class="projects-heading">
+        <span class="projects-eyebrow">MY PORTFOLIO</span>
+        <h2 id="projects-title">Featured Projects<span class="heading-dot">.</span></h2>
+        <p>Ideas transformed into practical digital experiences.</p>
+      </div>
+
+      <div class="projects-container">
+
+        <!-- Project 1 -->
+        <article class="project-card is-active" role="group" aria-roledescription="slide" aria-label="1 of 2">
+          <div class="project-preview" role="link" tabindex="0"
+               data-href="./METROPOLITANA%20WEBSITE/index.html"
+               aria-label="Open Metropolitana Website in a new tab">
+            <iframe
+              src="./METROPOLITANA%20WEBSITE/index.html"
+              title="Metropolitana Website Preview"
+              tabindex="-1"
+              loading="lazy">
+            </iframe>
+            <span class="project-number">01 / 02</span>
+            <span class="project-type">Web Development</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-description">
+              <h3>Metropolitana Website</h3>
+              <p>
+                An institutional website for an SDA church, designed
+                to deliver a modern, accessible and responsive digital
+                experience.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card" role="group" aria-roledescription="slide" aria-label="2 of 2">
+          <div class="project-preview subscription-preview" role="link" tabindex="0"
+               data-href="./METROPOLITANA%20WEBSITE/SUBSCRIPTION%20FORM/index.html"
+               aria-label="Open Subscription Form in a new tab">
+            <iframe
+              src="./METROPOLITANA%20WEBSITE/SUBSCRIPTION%20FORM/index.html"
+              title="Subscription Form Preview"
+              tabindex="-1"
+              loading="lazy">
+            </iframe>
+            <span class="project-number">02 / 02</span>
+            <span class="project-type">Form Design</span>
+          </div>
+
+          <div class="project-info">
+            <div class="project-description">
+              <h3>Subscription Form</h3>
+              <p>
+                A user-friendly subscription form focused on clear
+                input fields, form validation and a smooth user
+                experience.
+              </p>
+              <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>Forms</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+      <div class="slideshow-controls">
+        <div class="slideshow-pagination" aria-label="Choose project">
+          <button class="slide-dot is-active" type="button" aria-label="Show project 1" aria-current="true"></button>
+          <button class="slide-dot" type="button" aria-label="Show project 2" aria-current="false"></button>
+        </div>
+
+        <div class="slideshow-arrows">
+          <button class="slide-arrow slide-prev" type="button" aria-label="Previous project">←</button>
+          <button class="slide-arrow slide-next" type="button" aria-label="Next project">→</button>
+        </div>
+      </div>
+
+      <p class="visually-hidden slide-status" aria-live="off">Project 1 of 2</p>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+
+      <div class="about-content">
+        <img src="First.png" alt="Portrait of Jorge Catewa" class="profile-photo">
+
+        <div class="about-text">
+          <p>Hi, I'm Jorge! I'm currently pursuing a BSc in Computer Science, and I'm passionate about turning real problems into working solutions.</p>
+          <p>I'm also interested in AI-assisted development, cybersecurity and data science.</p>
+          <p>When I'm not coding, I like to watch anime and write songs.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2>Skills</h2>
+
+      <ul class="skills-list">
+
+        <li class="skill">
+          <div class="skill-header">
+            <h3>HTML</h3>
+            <span class="skill-percent">90%</span>
+          </div>
+          <p>Building the structure of web pages with clean, semantic markup.</p>
+          <div class="progress-bar" role="progressbar" aria-label="HTML proficiency" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" style="width: 90%;"></div>
+          </div>
+        </li>
+
+        <li class="skill">
+          <div class="skill-header">
+            <h3>CSS</h3>
+            <span class="skill-percent">80%</span>
+          </div>
+          <p>Styling responsive layouts and making pages look good on any screen.</p>
+          <div class="progress-bar" role="progressbar" aria-label="CSS proficiency" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" style="width: 80%;"></div>
+          </div>
+        </li>
+
+        <li class="skill">
+          <div class="skill-header">
+            <h3>JavaScript</h3>
+            <span class="skill-percent">70%</span>
+          </div>
+          <p>Adding interactivity and logic to web pages.</p>
+          <div class="progress-bar" role="progressbar" aria-label="JavaScript proficiency" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" style="width: 70%;"></div>
+          </div>
+        </li>
+
+        <li class="skill">
+          <div class="skill-header">
+            <h3>MySQL</h3>
+            <span class="skill-percent">55%</span>
+          </div>
+          <p>Designing databases and writing queries to store and retrieve data.</p>
+          <div class="progress-bar" role="progressbar" aria-label="MySQL proficiency" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" style="width: 55%;"></div>
+          </div>
+        </li>
+
+        <li class="skill">
+          <div class="skill-header">
+            <h3>Java</h3>
+            <span class="skill-percent">50%</span>
+          </div>
+          <p>Writing object-oriented programs and solving problems with algorithms.</p>
+          <div class="progress-bar" role="progressbar" aria-label="Java proficiency" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" style="width: 50%;"></div>
+          </div>
+        </li>
+
+        <li class="skill">
+          <div class="skill-header">
+            <h3>PHP</h3>
+            <span class="skill-percent">45%</span>
+          </div>
+          <p>Building server-side features and connecting web pages to a database.</p>
+          <div class="progress-bar" role="progressbar" aria-label="PHP proficiency" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100">
+            <div class="progress-fill" style="width: 45%;"></div>
+          </div>
+        </li>
+
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- FOOTER / CONTACT -->
+  <footer id="contact">
+
+    <div class="social-links">
+      <a href="https://facebook.com/jorge.catewa.2025" aria-label="Facebook" target="_blank" rel="noopener">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+      <a href="https://github.com/Jorge-C0" aria-label="GitHub" target="_blank" rel="noopener">
+        <i class="fa-brands fa-github"></i>
+      </a>
+      <a href="https://instagram.com/iamjorgec0" aria-label="Instagram" target="_blank" rel="noopener">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://wa.me/244945033476" aria-label="WhatsApp" target="_blank" rel="noopener">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+    </div>
+
+    <form class="email-bar" action="mailto:catewafirst040@gmail.com" method="post" enctype="text/plain">
+      <label for="email-message" class="visually-hidden">Message</label>
+      <input type="text" id="email-message" name="message" placeholder="Write your message here..." required>
+      <button type="submit">Send email</button>
+    </form>
+
+    <p>&copy; 2026 First Benvindo Jorge Catewa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

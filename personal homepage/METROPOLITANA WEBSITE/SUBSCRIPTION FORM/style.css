@@ -1,0 +1,98 @@
+/* ---------- Page (body) ---------- */
+body {
+  background-color: #f4f1f7;   /* light background color for the whole page */
+  font-family: Arial, sans-serif; /* the font used for all text */
+  margin: 0;                   /* removes the browser's default outer space */
+  min-height: 100vh;           /* makes the page at least as tall as the screen */
+  display: flex;               /* lets us easily center the form box */
+  justify-content: center;     /* centers the box left-to-right */
+  align-items: center;         /* centers the box top-to-bottom */
+  padding: 20px;               /* space around the edges so it never touches the screen sides */
+  box-sizing: border-box;      /* includes padding in the total size */
+  }
+
+.featured-images {
+  width: 100px;         /* makes the image about 100 pixels wide */
+  height: auto;         /* keeps the image's natural proportions */
+  border-radius: 13px;  /* rounds the image corners */
+  margin-bottom: 16px;  /* space between the image and the heading */
+}
+/* ---------- White form box ---------- */
+.form-container {
+  background-color: #ffffff;   /* white background for the form box */
+  max-width: 420px;            /* the box will never be wider than 420 pixels */
+  width: 100%;                 /* on small screens, use the full available width */
+  padding: 32px;               /* space inside the box, between the edge and the content */
+  border-radius: 12px;         /* rounds the corners */
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1); /* soft shadow that makes the box float */
+  text-align: center;          /* centers the text inside the box */
+}
+
+/* ---------- Heading ---------- */
+h1 {
+  color: #471869;              /* the brand purple color */
+  font-size: 28px;             /* size of the heading text */
+  margin-top: 0;               /* removes extra space above the heading */
+  margin-bottom: 16px;         /* space between the heading and the paragraph */
+}
+
+/* ---------- Paragraph ---------- */
+p {
+  color: #444444;              /* dark gray text is easy to read */
+  font-size: 16px;             /* size of the paragraph text */
+  line-height: 1.5;            /* space between lines of text */
+  margin-bottom: 24px;         /* space between the paragraph and the form */
+}
+
+/* ---------- Label ---------- */
+label {
+  display: block;              /* puts the label on its own line */
+  text-align: left;            /* aligns the label text to the left */
+  font-weight: bold;           /* makes the label text bold */
+  color: #333333;              /* dark gray label color */
+  margin-bottom: 6px;          /* small space between label and input */
+}
+
+/* ---------- Email input ---------- */
+input[type="email"] {
+  width: 100%;                 /* input fills the width of the box */
+  padding: 12px;               /* space inside the input so text isn't cramped */
+  border: 1px solid #cccccc;   /* thin light gray border */
+  border-radius: 6px;          /* slightly rounded corners */
+  font-size: 15px;             /* size of the text the visitor types */
+  box-sizing: border-box;      /* keeps the input from growing wider than the box */
+  margin-bottom: 16px;         /* space between the input and the button */
+}
+
+input[type="text"] {
+  width: 100%;                 /* input fills the width of the box */
+  padding: 12px;               /* space inside the input so text isn't cramped */
+  border: 1px solid #cccccc;   /* thin light gray border */
+  border-radius: 6px;          /* slightly rounded corners */
+  font-size: 16px;             /* size of the text the visitor types */
+  box-sizing: border-box;      /* keeps the input from growing wider than the box */
+  margin-bottom: 16px;         /* space between the input and the button */
+}
+/* Highlights the input when the visitor clicks inside it */
+input[type="email"]:focus {
+  outline: none;               /* removes the default browser outline */
+  border-color: #471869;       /* border turns brand purple */
+}
+
+/* ---------- Button ---------- */
+button {
+  background-color: #471869;   /* the brand purple color */
+  color: #ffffff;              /* white button text */
+  border: none;                /* removes the default button border */
+  border-radius: 6px;          /* rounded corners to match the input */
+  padding: 14px;               /* space inside the button */
+  width: 100%;                 /* button fills the width of the box */
+  font-size: 18px;             /* size of the button text */
+  font-weight: bold;           /* makes the button text bold */
+  cursor: pointer;             /* shows a hand pointer when hovering */
+}
+
+/* Slightly lighter purple when the mouse is over the button */
+button:hover {
+  background-color: #5c2285;  
+}
